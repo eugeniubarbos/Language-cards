@@ -1,0 +1,37 @@
+.CardList{
+  max-width: 350px;
+  margin: auto;
+  background:  linear-gradient(45deg, #F48B29 40%, #53C1DD 40%, #53C1DD 55%, #F48B29 55%);
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.7);
+  text-align: center;
+  padding: 5px;
+}
+
+.CardList > h1{
+  font-size: 30px;
+  color: white;
+}
+
+.CardList > .cards{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+@media(max-width: 425px){
+ .CardList > .cards{
+  flex-direction: column;
+  padding: 1rem;
+ }
+ .CardList > h1{
+  font-size: 24px;
+ }
+
+ .CardList{
+  margin-bottom: 2rem;
+  max-width: 90%;
+ }
+}
